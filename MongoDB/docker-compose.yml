@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mongodb:
+    build: .
+    ports:
+      - "27017:27017"
+    environment:
+      FLASK_ENV: development
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_ROOT_USERNAME: root
+
